@@ -7,7 +7,6 @@ pipeline{
         APP_REPO_NAME = "aysun-repo/phonebook-app"
         AWS_REGION = "us-east-1"
         AWS_STACK_NAME = "Ays-Phonebook-App-${BUILD_NUMBER}"
-        App-${BUILD_NUMBER}"
         CFN_KEYPAIR = "a"
         HOME_FOLDER = "/home/ec2-user"
         GIT_FOLDER = sh(script:'echo ${GIT_URL} | sed "s/.*\\///;s/.git$//"', returnStdout:true).trim()
